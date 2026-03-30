@@ -65,24 +65,15 @@ Provide a high-quality institutional website to:
 
 | Layer      | Technology    |
 | ---------- | ------------- |
-| Frontend   | React (JSX)   |
+| Frontend   | React (TSX)   |
 | Routing    | React Router  |
 | Animations | Framer Motion |
 | Tooling    | Vite          |
 
----
-
-## Future Improvements
-
-- Migration from JSX to TypeScript (TSX)
-- Backend integration with Java + Spring Boot for chat
-- Animations using GSAP (scroll & mouse interactions)
 
 ---
 
-### Em Desenvolvimento!
-
-### Autor e Produtor:
+### Developer:
 
 #### Felipy Santos - Developer (Full-Stack)
 
