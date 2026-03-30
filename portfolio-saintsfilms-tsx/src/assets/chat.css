@@ -50,7 +50,7 @@
 }
 
 .chat-header::before {
-  background-image: url(/saints-logo.png);
+  background-image: url(/saints-logo-favicon.png);
   background-size: 26px;
   content: "";
   width: 26px;

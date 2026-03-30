@@ -4,12 +4,14 @@ import Header from "./components/Header";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./components/Footer";
 import ScrollBar from "./components/ScrollBar";
+import Chat from "./components/Chat";
 
 function App() {
   return (
     <>
       <Header />
       <ScrollBar />
+      <Chat />
       <AnimatePresence mode="wait">
         <motion.div
           key={location.pathname}
