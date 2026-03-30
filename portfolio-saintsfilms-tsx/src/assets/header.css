@@ -1,0 +1,120 @@
+.link-interno {
+  font-family: var(--font-primary);
+  text-decoration: none;
+  color: var(--black-deep);
+  font-weight: var(--font-light);
+  margin: 0 8px;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
+  transition: 0.5s;
+  transition-behavior: smooth;
+  cursor: pointer; 
+  
+}
+.link-interno:hover {
+  color: rgb(157, 154, 154);
+  transition: 0.5s;
+  filter: blur(0.1px);
+  transition-behavior: smooth;
+}
+
+.active{
+  border-bottom: 1px solid #2c2c2c;
+}
+
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container-header {
+  display: grid;
+  grid-template: 80px / repeat(2, auto);
+
+  padding: .6vw 4vw;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+  box-shadow: -1px 10px 50px 17px rgba(237, 237, 237, 0.237);
+  margin: auto;
+  max-width: 1990px;
+  min-width: 320px; 
+}
+
+.logo-icon-saints {
+  width: clamp(90px, 7rem, 110px);
+}
+
+
+.burguer-menu {
+  display: none;
+  position: fixed;
+  top: 30px;
+  right: 24px;
+  z-index: 999999;
+
+}
+
+.nav-header-menu {
+  display: flex;
+  gap: 20px;
+}
+
+
+@media (max-width: 760px) {
+  .nav-header-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    height: 100%;
+    width: 100vw;
+    width: -webkit-fill-available;
+    z-index: 99999;
+    
+    background: #ffffffde;
+    backdrop-filter: blur(85px);
+    transition: 0.5s;
+  }
+  
+  
+
+  .nav-header-menu.is-open {
+    display: flex;
+  }
+
+  .link-interno {
+    font-size: 1.8rem;
+  }
+
+  .burguer-menu {
+   display: block;
+   cursor: pointer;
+  }
+
+  .burguer-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--gray-disabled);
+    margin: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .first-line.active {
+    transform: rotate(-41deg) translate(-7px, 7px) scale(115%);
+    transition: 0.5s;
+    background: var(--black-deep);
+    cursor: pointer;
+  }
+  .second-line.active {
+    transform: rotate(41deg) translate(-1px, 1px) scale(115%);
+    transition: 0.5s;
+    background: var(--black-deep);
+    cursor: pointer;
+  }
+}

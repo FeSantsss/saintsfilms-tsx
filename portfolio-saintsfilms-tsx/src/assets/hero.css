@@ -1,0 +1,48 @@
+.hero-container {
+  background-color: #e8e8e8;
+  height: fit-content;
+  max-width: 1990px;
+  min-width: 320px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px clamp(16px, 5vw, 40px);
+  padding-bottom: 70px;
+
+  color: var(--black-main);
+}
+
+@media (min-width: 1200px) {
+  .hero-container {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-evenly;
+    padding: 120px 40px;
+  }
+}
+
+.slogan-text {
+  font-size: clamp(1.8rem, 9.5vw, 6rem);
+  font-family: var(--font-libre-rich);
+  font-weight: 600;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+.dicionary-design {
+  font-family: var(--font-libre-rich);
+  font-size: clamp(0.7rem, 3vw, 1.3rem);
+}
+
+.dicionary p {
+  margin-top: 20px;
+}
+
+.saints-dicionary-name {
+  margin-top: 70px;
+  font-size: 18px;
+  font-weight: 600;
+}

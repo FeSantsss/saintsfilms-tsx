@@ -1,0 +1,123 @@
+.container-primary {
+  background-color: #fff;
+  height: fit-content;
+  padding-bottom: 50px;
+  max-width: 1990px;
+  min-width: 320px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.div-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  gap: clamp(40px, 5vw, 100px);
+  max-width: 1700px;
+  margin: 0 auto;
+}
+@media (min-width: 1100px) {
+  .div-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1650px) {
+  .div-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.div-title {
+  text-align: center;
+  padding: 80px 20px;
+  font-family: var(--font-libre-rich);
+}
+
+.title-section-one {
+  font-weight: 700;
+  font-size: clamp(22px, 2.3rem, 60px);
+  margin-bottom: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: clamp(40px, 7vw, 80px);
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVG */
+.circle {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+  animation: spin 25s linear infinite;
+
+  /* deixa mais suave visualmente */
+  transform-origin: center;
+  will-change: transform;
+
+  /* leve glow premium */
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
+}
+
+/* TEXTO */
+.circle text {
+  font-size: clamp(14px, 2vw, 15px);
+  font-family: var(--font-primary);
+  letter-spacing: 4px;
+  fill: var(--black-main);
+
+  /* suaviza renderização */
+  text-rendering: geometricPrecision;
+}
+
+/* ROTAÇÃO */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.title-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+/* reposiciona o círculo corretamente */
+.title-wrapper .circle {
+  position: absolute;
+
+  top: -50px; /* sobe */
+  left: -50px; /* alinha com começo do "nossos" */
+
+  width: 150px;
+  height: 150px;
+
+  opacity: 0.7;
+  pointer-events: none; /* evita bug de clique */
+  z-index: 2;
+}
+
+@media (max-width: 340px) {
+  .title-section-one {
+    font-size: 30px;
+  }
+  .circle text {
+    font-size: 14px;
+  }
+}

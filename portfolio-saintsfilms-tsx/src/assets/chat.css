@@ -1,0 +1,194 @@
+:root {
+  --bg-main: #f5f5f7;
+  --bg-card: #ffffff;
+  --bg-user: #0b0b0b;
+  --bg-bot: #ececf0;
+
+  --text-main: #1d1d1f;
+  --text-muted: #6e6e73;
+
+  --radius: 18px;
+  --radius-sm: 14px;
+
+  --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.chat-atendimento {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  background: var(--bg-main);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 30;
+  font-family: var(--font-primary);
+}
+
+.chat-atendimento.open {
+  display: flex;
+}
+
+.span-in-chat {
+  text-transform: uppercase;
+}
+
+.chat-header {
+  font-family: var(--font-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  color: var(--text-main);
+  border-bottom: 1px solid rgba(82, 81, 81, 0.597);
+  background-color: var(--black-main);
+  color: var(--white-main);
+  height: 60px;
+}
+
+.chat-header::before {
+  background-image: url(/saints-logo.png);
+  background-size: 26px;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border-radius: 10px;
+}
+
+:focus {
+  border: none;
+  outline: none;
+}
+
+.chat-actions button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--white-main);
+  margin-left: 10px;
+}
+
+.chat-actions button:hover {
+  color: var(--white-soft);
+}
+
+.mensagens {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.msg {
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: var(--font-primary);
+}
+
+.msg.bot {
+  background: var(--bg-bot);
+  color: var(--text-main);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  max-width: 85%;
+}
+
+.msg.user {
+  background: var(--bg-user);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  align-self: flex-end;
+  max-width: 85%;
+}
+
+.input-area {
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.input-area input,
+.input-area select,
+.input-area textarea {
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+}
+
+.input-area button {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 17px;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.input-area button:hover {
+  background-color: #6e6e73;
+}
+
+.chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 160px;
+  height: 50px;
+  color: #fff;
+  background-color: var(--black-deep);
+  border-radius: 13px;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 999;
+  text-align: center;
+  border: none;
+  transition: 1s;
+
+  box-shadow: 11px 14px 50px 1px rgba(0, 0, 0, 0.21);
+}
+
+@media (min-width: 1100px) {
+  .chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 160px;
+    height: 50px;
+  }
+}
+
+.chat-toggle:hover {
+  transition: 0.5s;
+  background-color: var(--black-main);
+}
+
+.p-in-chat-toggle {
+  color: #f5f5f7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0px 0px 5px 0px;
+  font-size: 10px;
+}
+
+.p-in-chat-toggle::before {
+  content: url(../images/chat-4-24.png);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+@media (max-width: 340px) {
+  .chat-atendimento {
+    width: 297px;
+  }
+}

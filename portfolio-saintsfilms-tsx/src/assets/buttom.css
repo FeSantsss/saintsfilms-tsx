@@ -1,0 +1,30 @@
+.button-box-design{
+  padding: 3.5px 7.5px;
+  border-radius: 12px;
+
+  font-family: var(--font-primary);
+  font-size: 17px;
+  font-weight: var(--font-semibold);
+  margin-top: 18px;
+  margin-bottom: var(--space-lg);
+
+  background-color: var(--white-main);
+  color: var(--black-main);
+
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  box-shadow: 1px 1px 8px var(--black-soft);
+
+  transition:
+    background-color 0.2s ease,
+    color 1s ease,
+    transform 0.1s ease,
+    box-shadow 0.5s ease;
+}
+
+.button-box-design:hover{
+  border: 1px solid var(--gray-hover);
+  background-color: var(--black-soft);
+  color: var(--white-main);
+}

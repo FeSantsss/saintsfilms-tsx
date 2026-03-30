@@ -1,0 +1,45 @@
+.scrollbar {
+  position: fixed;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90px;
+  width: 3.5px;
+
+  border-radius: 50px;
+  background: #a1a1a1;
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  box-shadow: 0px 0px 44px 5px rgba(235, 235, 235, 0.34);
+  z-index: 999;
+}
+
+.scrollbar.active {
+  opacity: 1;
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+
+  transform-origin: top;
+  transform: scaleY(0);
+
+  border-radius: 50px;
+  background: #f5f5f9;
+
+  box-shadow:
+    0 0 6px rgba(255, 255, 255, 0.4),
+    0 0 12px rgba(255, 255, 255, 0.15);
+
+  will-change: transform;
+}
+
+.scrollbar:hover .thumb {
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.6),
+    0 0 18px rgba(255, 255, 255, 0.25);
+}

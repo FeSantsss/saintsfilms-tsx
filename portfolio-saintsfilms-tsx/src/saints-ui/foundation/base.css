@@ -1,0 +1,26 @@
+/* Fonts */
+
+/* Font Libre Basker */
+@font-face {
+  font-family: 'libre';
+  src: url(fonts/LibreBaskerville-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+
+/* Font SORA */
+
+@font-face {
+  font-family: 'Sora';
+  src: url(fonts/Sora-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+
+
+/* Resetting default margin and padding */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+

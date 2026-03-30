@@ -1,0 +1,34 @@
+
+
+.div-error-page{
+  background-color: var(--white-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+.title-error-page{
+  font-size: clamp(80px, 7rem, 150px);
+  font-family: var(--font-primary);
+  margin-bottom: 10px;
+}
+.error-page-btn{
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--black-main);
+  color: var(--white-main);
+  font-family: var(--font-primary);
+  box-shadow: 1px 28px 80px 5px rgba(0,0,0,0.27);
+}
+.error-page-btn:hover{
+  opacity: .9;
+}
+
+.about-error-page{
+  font-family: var(--font-primary);
+  font-size: 15px;
+  margin-bottom: 20px;
+}

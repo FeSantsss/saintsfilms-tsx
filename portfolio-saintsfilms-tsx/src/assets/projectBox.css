@@ -1,0 +1,34 @@
+.project-box{
+  width: clamp(18rem, 90vw, 30rem);
+  aspect-ratio: 1/1;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 18px -3px rgba(0,0,0,0.56);
+
+  position: relative;
+  
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  
+}
+
+
+.content-box-design{
+  font-family: var(--font-libre-rich);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black-main);
+}
+
+.image-for-project-box{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.image-for-project-box::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
