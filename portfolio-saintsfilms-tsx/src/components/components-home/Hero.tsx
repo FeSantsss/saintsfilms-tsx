@@ -6,11 +6,28 @@ const Hero = () => {
   return (
     <>
       <section className="hero-container">
-        <h1 className="slogan-text">
+        <motion.h1
+          className="slogan-text"
+          initial={{
+            opacity: 0,
+            x: -5,
+            filter: "blur(5px)",
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            filter: "blur(0px)",
+          }}
+          transition={{
+            duration: 0.4,
+            ease: "easeIn",
+          }}
+          viewport={{ once: true }}
+        >
           imagem, <br />
           presença & <br />
           posicionamento.
-        </h1>
+        </motion.h1>
 
         <motion.div
           className="dicionary-design"
