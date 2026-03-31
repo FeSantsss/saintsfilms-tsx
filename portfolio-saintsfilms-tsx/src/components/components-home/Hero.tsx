@@ -6,12 +6,18 @@ const Hero = () => {
   return (
     <>
       <section className="hero-container">
-        <motion.h1
-          className="slogan-text"
+        <h1 className="slogan-text">
+          imagem, <br />
+          presença & <br />
+          posicionamento.
+        </h1>
+
+        <motion.div
+          className="dicionary-design"
           initial={{
             opacity: 0,
-            x: -20,
-            filter: "blur(10px)",
+            x: -5,
+            filter: "blur(5px)",
           }}
           whileInView={{
             opacity: 1,
@@ -19,17 +25,11 @@ const Hero = () => {
             filter: "blur(0px)",
           }}
           transition={{
-            duration: 1,
+            duration: 0.4,
             ease: "easeInOut",
           }}
           viewport={{ once: true }}
         >
-          imagem, <br />
-          presença & <br />
-          posicionamento.
-        </motion.h1>
-
-        <div className="dicionary-design">
           <p className="saints-dicionary-name">saints.</p>
 
           <div className="dicionary">
@@ -51,7 +51,7 @@ const Hero = () => {
               onde marcas deixam de aparecer <br /> e começam a ser percebidas.
             </p>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

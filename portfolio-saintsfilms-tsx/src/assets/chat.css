@@ -182,7 +182,16 @@
 }
 
 .p-in-chat-toggle::before {
-  content: url(../images/chat-4-24.png);
+  content: "";
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../images/service.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
   margin-right: 10px;
   vertical-align: middle;
 }

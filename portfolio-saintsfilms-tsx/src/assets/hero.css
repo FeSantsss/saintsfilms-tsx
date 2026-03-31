@@ -24,12 +24,11 @@
 
 .slogan-text {
   font-size: clamp(1.8rem, 9.5vw, 6rem);
-  font-family: var(--font-libre-rich);
-  font-weight: 600;
+  font-family: var(--font-libre-rich-bold);
+  letter-spacing: -0.5px;
 }
-
 li {
-  margin-left: 1rem;
+  margin-left: 1.3rem;
 }
 
 .dicionary-design {
@@ -43,6 +42,7 @@ li {
 
 .saints-dicionary-name {
   margin-top: 70px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 550;
+  letter-spacing: 1px;
 }

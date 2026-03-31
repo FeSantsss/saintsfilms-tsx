@@ -9,7 +9,7 @@ import {
   RouterProvider,
   Navigate,
 } from "react-router-dom";
-const Home = lazy(() => import("./routes/Home.tsx"));
+import Home from "./routes/Home.tsx";
 import ErrorPage from "./routes/ErrorPage.tsx";
 const About = lazy(() => import("./routes/About.tsx"));
 

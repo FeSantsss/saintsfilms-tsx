@@ -2,19 +2,24 @@
 
 /* Font Libre Basker */
 @font-face {
-  font-family: 'libre';
-  src: url(fonts/LibreBaskerville-VariableFont_wght.ttf) format("truetype");
+  font-family: "libre";
+  src: url(fonts/Libre-Baskerville-V2.woff2) format("woff2");
   font-display: swap;
+}
+@font-face {
+  font-family: "libre-bold";
+  src: url(fonts/Libre-Baskerville-Bold.woff2) format("woff2");
+  font-display: swap;
+  font-weight: 600;
 }
 
 /* Font SORA */
 
 @font-face {
-  font-family: 'Sora';
+  font-family: "Sora";
   src: url(fonts/Sora-VariableFont_wght.ttf) format("truetype");
   font-display: swap;
 }
-
 
 /* Resetting default margin and padding */
 
@@ -22,5 +27,3 @@
   padding: 0px;
   margin: 0px;
 }
-
-

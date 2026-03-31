@@ -5,7 +5,7 @@
   font-weight: 200;
 }
 .title-about-page {
-  font-family: var(--font-libre-rich);
+  font-family: var(--font-libre-rich-bold);
   font-size: clamp(2.4rem, 4vw, 3rem);
   margin: 0px 0 clamp(20px, 1rem, 40px);
 }

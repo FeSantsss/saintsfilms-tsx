@@ -1,34 +1,48 @@
-:root{
-/* Colors */
+:root {
+  /* Colors */
 
-  --black-main: #1d1d1f;      /* background or primary text */
-  --black-deep: #121212;      /* more detailed sections */
-  --black-soft: #2c2c2e;      /* cards, blocks, overlays */  
-  --dark-footer: #151515;    /* black footer background */
+  --black-main: #1d1d1f; /* background or primary text */
+  --black-deep: #121212; /* more detailed sections */
+  --black-soft: #2c2c2e; /* cards, blocks, overlays */
+  --dark-footer: #151515; /* black footer background */
 
+  --white-main: #f5f5f7; /* background or primary text */
+  --white-soft: #d1d1d6; /* second text */
+  --white-muted: #a1a1a6; /* subtitles */
+  --white-other: #f2f2fa; /* others functions */
 
-  --white-main: #f5f5f7;      /* background or primary text */
-  --white-soft: #d1d1d6;      /* second text */
-  --white-muted: #a1a1a6;     /* subtitles */
-  --white-other: #f2f2fa;     /* others functions */
+  --gray-line: #3a3a3c4b; /* divisions */
+  --gray-hover: #48484a; /* hover */
+  --gray-disabled: #636366; /* desabled */
 
-  --gray-line: #3a3a3c4b;       /* divisions */
-  --gray-hover: #48484a;     /* hover */
-  --gray-disabled: #636366;  /* desabled */
+  --gradient-perfect-blackgray: linear-gradient(
+    180deg,
+    #2c2c2e 0%,
+    #1d1d1f 60%,
+    #121212 100%
+  ); /* premium section black */
+  --gradient-white-premium: linear-gradient(
+    180deg,
+    #dadadb 0%,
+    #f2f1f1 50%,
+    #e7e6e6 100%
+  ); /* premium section white */
+  --gradient-white-premium-simple: linear-gradient(
+    180deg,
+    #f5f5f7 0%,
+    #f1f1f3 50%,
+    #ededf0 100%
+  ); /* normal section */
 
-  --gradient-perfect-blackgray: linear-gradient(180deg,#2c2c2e 0%,#1d1d1f 60%,#121212 100%); /* premium section black */
-  --gradient-white-premium: linear-gradient(180deg,#dadadb 0%,#f2f1f1 50%,#e7e6e6 100%);     /* premium section white */
-  --gradient-white-premium-simple: linear-gradient(180deg, #f5f5f7 0%,#f1f1f3 50%,#ededf0 100%); /* normal section */
-
-/*Font Weight*/
+  /*Font Weight*/
 
   --font-extralight: 200;
   --font-light: 300;
   --font-regular: 400;
   --font-semibold: 600;
   --font-bold: 800;
-  
-/* Spaces */
+
+  /* Spaces */
 
   --space-extreme-sm: 5px;
   --space-ex-sm: 8px;
@@ -39,15 +53,15 @@
   --space-ex-lg: 60px;
   --space-extreme-lg: 90px;
 
-/* Radius */
+  /* Radius */
 
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 20px;
 
+  /* Fonts */
 
-/* Fonts */
-
-  --font-primary: 'Sora', system-ui, sans-serif;
-  --font-libre-rich: 'libre', system-ui, sans-serif;
+  --font-primary: "Sora", system-ui, sans-serif;
+  --font-libre-rich: "libre", system-ui, sans-serif;
+  --font-libre-rich-bold: "libre-bold";
 }
