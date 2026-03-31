@@ -2,6 +2,7 @@ import ProjectBox from "./ProjectBox";
 
 import "../../assets/primarySection.css";
 import { useState, useEffect } from "react";
+import SvgCircle from "./SvgCircle";
 
 const PrimarySection = () => {
   interface Image {
@@ -23,25 +24,8 @@ const PrimarySection = () => {
       <section className="container-primary">
         <div className="div-title">
           <div className="title-wrapper">
+            <SvgCircle />
             <h2 className="title-section-one">nossos projetos</h2>
-
-            <svg viewBox="0 0 200 200" className="circle">
-              <defs>
-                <path
-                  id="circlePath"
-                  d="M 100, 100
-                    m -75, 0
-                    a 75,75 0 1,1 150,0
-                    a 75,75 0 1,1 -150,0"
-                />
-              </defs>
-
-              <text>
-                <textPath href="#circlePath">
-                  saints • saints • saints • saints • saints • saints •
-                </textPath>
-              </text>
-            </svg>
           </div>
         </div>
 

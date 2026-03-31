@@ -67,7 +67,7 @@
   transform-origin: center;
   will-change: transform;
 
-  /* leve glow premium */
+  /* leve glow */
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.15));
 }
 
@@ -75,11 +75,12 @@
 .circle text {
   font-size: clamp(14px, 2vw, 15px);
   font-family: var(--font-primary);
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   fill: var(--black-main);
 
   /* suaviza renderização */
   text-rendering: geometricPrecision;
+  z-index: 20;
 }
 
 /* ROTAÇÃO */
@@ -95,7 +96,6 @@
 .title-wrapper {
   position: relative;
   display: inline-block;
-  z-index: 2;
 }
 
 /* reposiciona o círculo corretamente */
@@ -110,7 +110,7 @@
 
   opacity: 0.7;
   pointer-events: none; /* evita bug de clique */
-  z-index: 2;
+  z-index: 20;
 }
 
 @media (max-width: 340px) {
