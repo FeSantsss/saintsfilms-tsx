@@ -75,7 +75,7 @@
 .circle text {
   font-size: clamp(14px, 2vw, 15px);
   font-family: var(--font-primary);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   fill: var(--black-main);
 
   /* suaviza renderização */

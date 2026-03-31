@@ -12,7 +12,7 @@ const SvgCircle = () => {
       </defs>
 
       <text>
-        <textPath href="#circlePath">
+        <textPath href="#circlePath" textLength="470" lengthAdjust="spacing">
           não entregamos vídeos • construímos presença •
         </textPath>
       </text>
