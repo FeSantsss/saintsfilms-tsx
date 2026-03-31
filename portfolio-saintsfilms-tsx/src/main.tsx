@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { lazy, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import "./saints-ui/foundation/tokens.css";
@@ -9,9 +9,9 @@ import {
   RouterProvider,
   Navigate,
 } from "react-router-dom";
-import Home from "./routes/Home.tsx";
+const Home = lazy(() => import("./routes/Home.tsx"));
 import ErrorPage from "./routes/ErrorPage.tsx";
-import About from "./routes/About.tsx";
+const About = lazy(() => import("./routes/About.tsx"));
 
 const route = createBrowserRouter([
   {

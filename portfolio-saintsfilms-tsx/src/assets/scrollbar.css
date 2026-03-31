@@ -6,7 +6,7 @@
   height: 90px;
   width: 3.5px;
 
-  border-radius: 50px;
+  border-radius: 500px;
   background: #a1a1a1;
   backdrop-filter: blur(6px);
   overflow: hidden;
@@ -28,7 +28,7 @@
   transform-origin: top;
   transform: scaleY(0);
 
-  border-radius: 50px;
+  border-radius: 500px;
   background: #f5f5f9;
 
   box-shadow:
