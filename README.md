@@ -22,6 +22,7 @@ Provide a high-quality institutional website to:
 - Showcase audiovisual services and brand identity
 - Deliver a modern and engaging user experience
 - Serve as a scalable base for future features (e.g. live chat, backend integration)
+- Improve perceived performance with skeleton loading placeholders
 
 ---
 
@@ -33,6 +34,7 @@ Provide a high-quality institutional website to:
 - Clean and modern UI design
 - Responsive layout for multiple devices
 - Component-based structure for scalability
+- Skeleton loading placeholders using `react-loading-skeleton` to improve UX during content fetch
 
 ---
 
@@ -44,6 +46,7 @@ Provide a high-quality institutional website to:
 - Animation handling with Framer Motion
 - Routing and navigation with React Router
 - Component modularization and reuse
+- Skeleton screens for loading states with `react-loading-skeleton`
 - Modern tooling with Vite
 - UI/UX focused on branding and presentation
 
@@ -63,13 +66,13 @@ Provide a high-quality institutional website to:
 
 ## Tech Stack
 
-| Layer      | Technology    |
-| ---------- | ------------- |
-| Frontend   | React (TSX)   |
-| Routing    | React Router  |
-| Animations | Framer Motion |
-| Tooling    | Vite          |
-
+| Layer      | Technology            |
+| ---------- | -------------------- |
+| Frontend   | React (TSX)           |
+| Routing    | React Router          |
+| Animations | Framer Motion         |
+| Loading UX| react-loading-skeleton |
+| Tooling    | Vite                  |
 
 ---
 
@@ -80,7 +83,3 @@ Provide a high-quality institutional website to:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/FeSantsss/saints-react/blob/main/LICENSE) file for details.
-
-```
-
-```
