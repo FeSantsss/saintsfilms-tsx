@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "../assets/service.css";
 import ServiceBox from "../components/components-service/ServiceBox";
 import ServiceSkeleton from "../skeletons/ServiceSkeleton"; // import skeleton
