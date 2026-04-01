@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import "../assets/about-page.css";
+import AboutSkeleton from "../skeletons/AboutSkeleton";
 
 interface IpropsImage {
   image: string;
@@ -10,11 +11,19 @@ interface IpropsImage {
 
 const About = () => {
   const [teamImage, setTeamImage] = useState<IpropsImage[]>([]);
+  const [isLoading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch("/imageAbout.json")
       .then((res) => res.json())
-      .then((data) => setTeamImage(data));
+      .then((data) => {
+        setTeamImage(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("image not found: " + error);
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -47,14 +56,18 @@ const About = () => {
           </p>
         </h2>
 
-        {teamImage.map((image, index) => (
-          <img
-            key={index}
-            src={image.image}
-            className={image.className}
-            alt="saints team image"
-          />
-        ))}
+        {isLoading ? (
+          <AboutSkeleton />
+        ) : (
+          teamImage.map((image, index) => (
+            <img
+              key={index}
+              src={image.image}
+              className={image.className}
+              alt="saints team image"
+            />
+          ))
+        )}
       </motion.div>
     </>
   );

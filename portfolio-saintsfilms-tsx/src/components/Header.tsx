@@ -40,15 +40,16 @@ const Header = () => {
           <motion.nav
             className={isOpen ? "nav-header-menu is-open" : "nav-header-menu"}
             initial={{ opacity: 0, filter: "blur(20px)" }}
-            whileInView={{ opacity: 1, filter: "blur(0px)" }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
             exit={{ opacity: 0, filter: "blur(10px)" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
           >
             <NavLink
               className={({ isActive }) =>
                 isActive ? "link-interno active" : "link-interno"
               }
               to="/"
+              end
               onClick={() => setOpen(false)}
             >
               início

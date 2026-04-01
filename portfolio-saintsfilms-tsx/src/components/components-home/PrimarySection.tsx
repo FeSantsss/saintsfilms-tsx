@@ -3,6 +3,7 @@ import ProjectBox from "./ProjectBox";
 import "../../assets/primarySection.css";
 import { useState, useEffect } from "react";
 import SvgCircle from "./SvgCircle";
+import ProjectBoxSkeleton from "../../skeletons/ProjectBoxSkeleton";
 
 const PrimarySection = () => {
   interface Image {
@@ -12,11 +13,19 @@ const PrimarySection = () => {
   }
 
   const [projects, setProjects] = useState<Image[]>([]);
+  const [isLoading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch("/ImagesPrimarySection.json")
       .then((res) => res.json())
-      .then((data) => setProjects(data));
+      .then((data) => {
+        setProjects(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error on images: " + error);
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -30,13 +39,17 @@ const PrimarySection = () => {
         </div>
 
         <div className="div-cards">
-          {projects.map((project) => (
-            <ProjectBox
-              key={project.id}
-              image={project.image}
-              content={project.content}
-            />
-          ))}
+          {isLoading
+            ? Array.from({ length: 3 }).map((_, i) => (
+                <ProjectBoxSkeleton key={i} />
+              ))
+            : projects.map((project) => (
+                <ProjectBox
+                  key={project.id}
+                  image={project.image}
+                  content={project.content}
+                />
+              ))}
         </div>
       </section>
     </>

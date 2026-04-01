@@ -11,7 +11,9 @@ import {
 } from "react-router-dom";
 import Home from "./routes/Home.tsx";
 import ErrorPage from "./routes/ErrorPage.tsx";
+const Service = lazy(() => import("./routes/Service.tsx"));
 const About = lazy(() => import("./routes/About.tsx"));
+import "react-loading-skeleton/dist/skeleton.css";
 
 const route = createBrowserRouter([
   {
@@ -22,7 +24,7 @@ const route = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "sobre", element: <About /> },
       { path: "projetos", element: <Navigate to={"/"} /> },
-      { path: "serviços", element: <Navigate to={"/"} /> },
+      { path: "serviços", element: <Service /> },
     ],
   },
 ]);

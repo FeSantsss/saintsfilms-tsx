@@ -1,6 +1,7 @@
 import "../../assets/secondSection.css";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import SecondSecSkeleton from "../../skeletons/SecondSecSkeleton";
 
 interface IpropsImage {
   id: number;
@@ -10,11 +11,19 @@ interface IpropsImage {
 
 const SecondSection = () => {
   const [images, setImages] = useState<IpropsImage[]>([]);
+  const [isLoading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch("/ImagesSecondSection.json")
       .then((res) => res.json())
-      .then((data) => setImages(data));
+      .then((data) => {
+        setImages(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("images not found: " + error);
+        setLoading(false);
+      });
   }, []);
 
   return (
@@ -40,30 +49,34 @@ const SecondSection = () => {
         </motion.h3>
 
         <div className="images-review">
-          {images.map((image) => (
-            <motion.img
-              src={image.image}
-              key={image.id}
-              className={image.class}
-              alt="image for review section"
-              initial={{
-                opacity: 0,
-                y: -50,
-                filter: "blur(20px)",
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                filter: "blur(0px)",
-              }}
-              transition={{
-                duration: 1,
-                ease: "easeOut",
-              }}
-              viewport={{ once: false }}
-              loading="lazy"
-            />
-          ))}
+          {isLoading
+            ? Array.from({ length: 3 }).map((_, i) => (
+                <SecondSecSkeleton key={i} />
+              ))
+            : images.map((image) => (
+                <motion.img
+                  src={image.image}
+                  key={image.id}
+                  className={image.class}
+                  alt="image for review section"
+                  initial={{
+                    opacity: 0,
+                    y: -50,
+                    filter: "blur(20px)",
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    filter: "blur(0px)",
+                  }}
+                  transition={{
+                    duration: 1,
+                    ease: "easeOut",
+                  }}
+                  viewport={{ once: false }}
+                  loading="lazy"
+                />
+              ))}
         </div>
       </section>
     </>

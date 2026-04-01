@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "presença",
+    "description": "cobertura estratégica para eventos, ativações e movimentos públicos. atuamos com olhar editorial, captando o que constrói imagem — não apenas o que acontece. ideal para marcas e figuras públicas que entendem que presença é construção contínua.",
+    "image": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-four.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "movimento",
+    "description": "micro-conteúdos e ativações com impacto imediato. ritmo, linguagem contemporânea e acabamento de campanha para transformar ações em circulação e relevância. não é volume. é direção aplicada à velocidade.",
+    "image": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "imagem",
+    "description": "fotografia com intenção narrativa. retratos, campanhas e registros com composição autoral, pensados para comunicar identidade, força e posicionamento. imagem não é estética isolada. é percepção estruturada.",
+    "image": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-four.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "recorrência",
+    "description": "projetos contínuos para marcas que desejam manter consistência visual e narrativa ao longo do tempo. planejamento, captação e entrega com alinhamento estratégico, mantendo a marca ativa sem perder identidade. presença se constrói na repetição com intenção.",
+    "image": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+  }
+]
