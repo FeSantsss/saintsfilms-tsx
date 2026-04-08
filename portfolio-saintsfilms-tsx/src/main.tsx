@@ -4,11 +4,7 @@ import "./index.css";
 import "./saints-ui/foundation/tokens.css";
 import "./saints-ui/foundation/base.css";
 import App from "./App.tsx";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Navigate,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/Home.tsx";
 import ErrorPage from "./routes/ErrorPage.tsx";
 const Service = lazy(() => import("./routes/Service.tsx"));
