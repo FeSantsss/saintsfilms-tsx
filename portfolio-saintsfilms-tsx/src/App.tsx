@@ -1,14 +1,20 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./components/Footer";
 import ScrollBar from "./components/ScrollBar";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 
 const Chat = lazy(() => import("./components/Chat"));
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <Header />
