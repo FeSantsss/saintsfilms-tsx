@@ -46,7 +46,7 @@ const Header = () => {
           >
             <NavLink
               className={({ isActive }) =>
-                isActive ? "link-interno active" : "link-interno"
+                isActive ? "link-interno" : "link-interno"
               }
               to="/"
               end
@@ -56,7 +56,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                isActive ? "link-interno active" : "link-interno"
+                isActive ? "link-interno" : "link-interno"
               }
               to="/serviços"
               onClick={() => setOpen(false)}
@@ -65,7 +65,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                isActive ? "link-interno active" : "link-interno"
+                isActive ? "link-interno" : "link-interno"
               }
               to="/projetos"
               onClick={() => setOpen(false)}
@@ -74,7 +74,7 @@ const Header = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                isActive ? "link-interno active" : "link-interno"
+                isActive ? "link-interno" : "link-interno"
               }
               to="/sobre"
               onClick={() => setOpen(false)}
