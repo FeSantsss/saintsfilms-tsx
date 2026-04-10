@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../../assets/caseDynamic.css";
+import AboutSkeleton from "../../skeletons/AboutSkeleton";
 
 type imagesUrl = {
   imageUrl: string;
@@ -17,6 +18,7 @@ interface Iproject {
 const CaseDynamic = () => {
   const { slug } = useParams();
   const [project, setProject] = useState<Iproject | null>(null);
+  const [isLoading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch("/json-cases/casesProject.json")
@@ -25,6 +27,7 @@ const CaseDynamic = () => {
         const foundProject = data.find((item: Iproject) => item.slug === slug);
         if (foundProject) {
           setProject(foundProject);
+          setLoading(false);
           document.title = `${foundProject.title} | Saints Films`;
         } else {
           window.location.href = "/";
@@ -39,17 +42,19 @@ const CaseDynamic = () => {
         <p className="description-dynamic">{project?.description}</p>
       </section>
       <section className="content-dynamic-container">
-        {project?.images.map((image, index) => (
-          <div key={index} className={`card ${image.type || "vertical"}`}>
-            <div className="dynamic-image-box">
-              <img
-                src={image.imageUrl}
-                className="image-dynamic"
-                alt="project image"
-              />
-            </div>
-          </div>
-        ))}
+        {isLoading
+          ? Array.from({ length: 10 }).map((_, i) => <AboutSkeleton key={i} />)
+          : project?.images.map((image, index) => (
+              <div key={index} className={`card ${image.type || "vertical"}`}>
+                <div className="dynamic-image-box">
+                  <img
+                    src={image.imageUrl}
+                    className="image-dynamic"
+                    alt="project image"
+                  />
+                </div>
+              </div>
+            ))}
       </section>
     </>
   );
