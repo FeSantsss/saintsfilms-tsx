@@ -4,7 +4,6 @@ import "../../assets/primarySection.css";
 import { useState, useEffect } from "react";
 import SvgCircle from "./SvgCircle";
 import ProjectBoxSkeleton from "../../skeletons/ProjectBoxSkeleton";
-import { Link } from "react-router-dom";
 
 const PrimarySection = () => {
   interface Image {
