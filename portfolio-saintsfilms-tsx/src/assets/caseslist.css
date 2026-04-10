@@ -64,6 +64,10 @@
   font-weight: 500;
   color: #222;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .title-project {
   font-family: var(--font-libre-rich);
   font-weight: 400;
