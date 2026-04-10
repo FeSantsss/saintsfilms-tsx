@@ -1,58 +1,118 @@
 [
   {
-    "title": "conteúdos para redes",
+    "title": "Conteúdos para Redes",
     "slug": "conteudos-para-redes",
     "description": "nosso teste de conteúdo",
     "images": [
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg",
+        "type": "horizontal"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-two.jpeg",
+        "type": "vertical"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-three.jpeg",
+        "type": "vertical"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-four.jpeg",
+        "type": "horizontal"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg",
+        "type": "horizontal"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-two.jpeg",
+        "type": "vertical"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-three.jpeg",
+        "type": "vertical"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-four.jpeg",
+        "type": "horizontal"
       }
     ]
   },
   {
-    "title": "cobertura de evento",
-    "slug": "cobertura-evento",
+    "title": "Cobertura de Evento",
+    "slug": "cobertura-eventos",
     "description": "nosso teste de conteúdo",
     "images": [
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg",
+        "type": "horizontal"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-two.jpeg",
+        "type": "vertical"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-three.jpeg",
+        "type": "vertical"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-four.jpeg",
+        "type": "horizontal"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg",
+        "type": "horizontal"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-two.jpeg",
+        "type": "vertical"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-three.jpeg",
+        "type": "vertical"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-four.jpeg",
+        "type": "horizontal"
       }
     ]
   },
   {
-    "title": "campanhas corporativas",
+    "title": "Campanhas Corporativas",
     "slug": "campanhas-corporativas",
     "description": "nosso teste de conteúdo",
     "images": [
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg",
+        "type": "horizontal"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-two.jpeg",
+        "type": "vertical"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-three.jpeg",
+        "type": "vertical"
       },
       {
-        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg"
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-four.jpeg",
+        "type": "horizontal"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-one.jpeg",
+        "type": "horizontal"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-two.jpeg",
+        "type": "vertical"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-three.jpeg",
+        "type": "vertical"
+      },
+      {
+        "imageUrl": "https://pub-29c79b56b9f44c2a80b005bc022bef94.r2.dev/saints-images/saints-photos/saints/about-four.jpeg",
+        "type": "horizontal"
       }
     ]
   }

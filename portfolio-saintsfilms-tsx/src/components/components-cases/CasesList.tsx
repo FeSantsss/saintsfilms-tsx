@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import ProjectBoxSkeleton from "../../skeletons/ProjectBoxSkeleton";
 import "../../assets/caseslist.css";
-
+import { Link } from "react-router-dom";
 interface Iproject {
   id: number;
   image: string;
   content: string;
+  slug: string;
 }
 
 const CasesList = () => {
@@ -46,30 +47,32 @@ const CasesList = () => {
               <ProjectBoxSkeleton key={i} />
             ))
           : projects.map((image) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  y: -10,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{
-                  duration: 1,
-                  ease: "easeIn",
-                }}
-                viewport={{ once: false }}
-                key={image.id}
-                className="div-case-card-list"
-              >
-                <img
-                  src={image.image}
-                  alt="image case"
-                  className="image-case-list"
-                />
-                <p className="content-case-list"> {image.content} </p>
-              </motion.div>
+              <Link to={`/projetos/${image.slug}`}>
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: -10,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    duration: 1,
+                    ease: "easeIn",
+                  }}
+                  viewport={{ once: false }}
+                  key={image.id}
+                  className="div-case-card-list"
+                >
+                  <img
+                    src={image.image}
+                    alt="image case"
+                    className="image-case-list"
+                  />
+                  <p className="content-case-list"> {image.content} </p>
+                </motion.div>
+              </Link>
             ))}
       </section>
     </>

@@ -12,6 +12,7 @@ const About = lazy(() => import("./routes/About.tsx"));
 import "react-loading-skeleton/dist/skeleton.css";
 import Cases from "./routes/Cases.tsx";
 import CasesList from "./components/components-cases/CasesList.tsx";
+import CaseDynamic from "./components/components-cases/CaseDynamic.tsx";
 
 const route = createBrowserRouter([
   {
@@ -24,7 +25,10 @@ const route = createBrowserRouter([
       {
         path: "projetos",
         element: <Cases />,
-        children: [{ index: true, element: <CasesList /> }],
+        children: [
+          { index: true, element: <CasesList /> },
+          { path: ":slug", element: <CaseDynamic /> },
+        ],
       },
       { path: "serviços", element: <Service /> },
     ],

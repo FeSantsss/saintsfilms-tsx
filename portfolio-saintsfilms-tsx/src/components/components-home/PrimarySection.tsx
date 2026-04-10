@@ -4,12 +4,14 @@ import "../../assets/primarySection.css";
 import { useState, useEffect } from "react";
 import SvgCircle from "./SvgCircle";
 import ProjectBoxSkeleton from "../../skeletons/ProjectBoxSkeleton";
+import { Link } from "react-router-dom";
 
 const PrimarySection = () => {
   interface Image {
     id: number;
     image: string;
     content: string;
+    slug: string;
   }
 
   const [projects, setProjects] = useState<Image[]>([]);
@@ -45,6 +47,7 @@ const PrimarySection = () => {
               ))
             : projects.map((project) => (
                 <ProjectBox
+                  action={`/projetos/${project.slug}`}
                   key={project.id}
                   image={project.image}
                   content={project.content}

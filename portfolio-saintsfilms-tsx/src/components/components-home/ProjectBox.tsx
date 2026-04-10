@@ -5,9 +5,10 @@ import Buttom from "./Buttom";
 interface propsBox {
   image: string;
   content: string;
+  action: string;
 }
 
-const ProjectBox = ({ image, content }: propsBox) => {
+const ProjectBox = ({ image, content, action }: propsBox) => {
   return (
     <>
       <motion.div
@@ -34,7 +35,7 @@ const ProjectBox = ({ image, content }: propsBox) => {
           />
         </div>
         <h2 className="content-box-design">{content}</h2>
-        <Buttom text={"ver case"} />
+        <Buttom action={action} text={"ver mais"} />
       </motion.div>
     </>
   );
